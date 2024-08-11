@@ -34,7 +34,7 @@ const MiddleSection = () => {
   const [posts, setPosts] = useState(null);
   const [userPosts, setUserPosts] = useState(null);
   useEffect(() => {
-    console.log(user);
+    // console.log(user);
     const fetchPosts = async () => {
       try {
         const fetchedPosts = await getPost(token, logout,setIsLoading);
