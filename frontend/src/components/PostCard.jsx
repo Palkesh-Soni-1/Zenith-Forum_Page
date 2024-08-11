@@ -37,7 +37,7 @@ const PostCard = ({ post }) => {
           }),
         }
       );
-      console.log(await response.json())
+      // console.log(await response.json())
       if (!response.ok) {
         setLoading(false);
         if (response.status === 401) logout();
